@@ -1,0 +1,4 @@
+selenium
+youtube_dl
+py-cord
+python-dotenv
