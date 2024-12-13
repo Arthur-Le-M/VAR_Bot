@@ -1,4 +1,6 @@
 import youtube_dl
+import os
+import ffmpeg
 
 class Downloader:
     def __init__(self, src="playlist.txt", path="./downloads") -> None:

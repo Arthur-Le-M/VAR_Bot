@@ -21,7 +21,7 @@ async def on_ready():
 @bot.slash_command(name="var", description="Scrape et télécharge les vidéos d'un site LeFive, puis les envoie ici.")
 @option("url", str, description="Lien du site LeFive", required=True)
 async def var_command(ctx: discord.ApplicationContext, url: str):
-    await ctx.respond(f"Scraping .. euuh Vérification de la var en cours pour: {url} ...", ephemeral=True)
+    await ctx.respond(f"Scraping .. euuh Vérification de la var en cours pour: {url} ...")
 
     scraper = Scraper()
     scraper.scrap_five_website(url)
