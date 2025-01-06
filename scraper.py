@@ -27,9 +27,11 @@ class Scraper:
         cookie_button.click()
 
         #Ads modal
-        close_modal_button = self.driver.find_element(By.CSS_SELECTOR, ".modal-body > div")
-
-        close_modal_button.click()
+        try:
+            close_modal_button = self.driver.find_element(By.CSS_SELECTOR, ".modal-body > div")
+            close_modal_button.click()
+        except:
+            print("pas de modal à fermer")
 
         
     def scrap_five_website(self, url: str):
